@@ -194,11 +194,7 @@ module RubyRTF
           add_modifier_section({:newline => true}, "\n")
         else
           val += 65_536 if val < 0
-          char = if val < 10_000
-                   [val.to_s.hex].pack('U*')
-                 else
-                   [val].pack('U*')
-                 end
+          char = [val].pack('U*')
           current_section[:text] << char
         end
 
