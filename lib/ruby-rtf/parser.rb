@@ -1,4 +1,4 @@
-# encoding: utf-8
+# encoding: ISO8859-1
 
 module RubyRTF
   # Handles the parsing of RTF content into an RubyRTF::Document
